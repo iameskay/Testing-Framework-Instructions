@@ -1,0 +1,25 @@
+ESPRESSO INSTRUCTIONS
+
+Prerequisites: 
+- On Device: turn of Window Animation Scale, Transition Animation Scale, and Animator Duration Scale
+- Install Latest Android Support Repository
+
+1. Open app/build.gradle and add these lines inside dependencies:
+
+androidTestCompile 'com/android.support.test.espresso:espresso-core:2.2.2'
+androidTestCompile 'com.android.support.test:runner:0.5'
+
+2. Set instrumentation runner. Add following line in android.defaultConfig:
+
+testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+3. Open Run -> Edit Configuration
+Choose module and add instrumentation runner: android.support.test.runner.AndroidJUnitRunner
+
+4. Run tests through studio or command line using ./gradlew connectedAndroidTest
+
+
+Helpful Links:
+
+UI Testing with Espresso://guides.codepath.com/android/UI-Testing-with-Espresso
+
