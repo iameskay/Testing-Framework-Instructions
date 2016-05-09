@@ -1,0 +1,18 @@
+CALABASH INSTRUCTIONS - ANDROID:
+
+1. Run application to make sure everything is good
+2. Run calabash-android gen in app file to create features folder
+3. Generate APK
+4. Run tests: calabash-android run <path-to-apk> (May have to set ANDROID_HOME variable to sdk path: http://stackoverflow.com/questions/19986214/setting-android-home-enviromental-variable-on-mac-os-x)
+
+* When writing custom steps: use query to find things in the app: https://developer.xamarin.com/guides/testcloud/calabash/calabash-query-syntax/ 
+You want to enter console to use query: calabash-android console <path-to-apk> 
+
+** If query is being weird, make sure your ANDRIOD_HOME variable is set properly. 
+
+How to find SDK Location:
+Tools->Android->SDK Manager
+
+Default APK location:
+ ./app/build/outputs/apk/app-debug.apk
+
