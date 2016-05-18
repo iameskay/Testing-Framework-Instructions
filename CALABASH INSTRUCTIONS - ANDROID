@@ -6,6 +6,8 @@ CALABASH INSTRUCTIONS - ANDROID:
 4. Run tests: calabash-android run <path-to-apk> (May have to set ANDROID_HOME variable to sdk path: 
 http://stackoverflow.com/questions/19986214/setting-android-home-enviromental-variable-on-mac-os-x)
 
+Run a single feature file: calabash-android run <path-to-apk> features/<your-feature-file>
+
 * When writing custom steps: use query to find things in the app: 
 https://developer.xamarin.com/guides/testcloud/calabash/calabash-query-syntax/ 
 You want to enter console to use query: calabash-android console <path-to-apk> 
